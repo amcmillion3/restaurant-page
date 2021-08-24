@@ -1,0 +1,22 @@
+body {
+    background-image: url(./vegan-burger.gif);
+}
+
+header {
+    text-align: center;
+    font-size: 5rem;
+    background-color: rgba(187, 49, 215, 0.8);
+    color: rgb(240, 240, 85);
+    border-radius: 25px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.nav-btn {
+    background-color: rgba(187, 49, 215, 0.5);
+    color: rgb(240, 240, 85);
+}
