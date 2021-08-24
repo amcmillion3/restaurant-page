@@ -1,6 +1,7 @@
 import {header, nav, navBtns} from './header';
 import aboutInfo from './home';
 import renderMenu from './menu';
+import contactInfo from './contact';
 
 const body = document.getElementById('content');
 const navButtons = navBtns();
@@ -14,9 +15,6 @@ navBar.appendChild(navButtons[0]);
 navBar.appendChild(navButtons[1]);
 navBar.appendChild(navButtons[2]); 
 
-const menu = document.getElementById('menu');
-const contact = document.getElementById('contact');
-
 (function render() {
     const home = document.getElementById('home');
     home.addEventListener('click', () => {
@@ -29,4 +27,10 @@ const contact = document.getElementById('contact');
             body.removeChild(body.lastChild);
             body.appendChild(renderMenu());
     });
+
+    const contact = document.getElementById('contact');
+    contact.addEventListener('click', () => {
+        body.removeChild(body.lastChild);
+        body.appendChild(contactInfo());
+});
 })();
