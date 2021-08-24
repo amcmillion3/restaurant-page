@@ -30,7 +30,19 @@ h2 {
     font-family: 'Brixton' sans-serif;
 }
 
+.nav-btn {
+    cursor: pointer;
+}
+
 #about {
+    color: #484848;
+    font-size: 3.2rem;
+    background-color: #f2ede6;
+    margin: 10rem 25rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+#contact-info {
     color: #484848;
     font-size: 3.2rem;
     background-color: #f2ede6;
