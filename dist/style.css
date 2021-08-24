@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Brixton';
+    src: url('./fonts/Brixton\ Bold.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./fonts/Gilroy-Light.otf') format('otf');
+}
+
 body {
     background-image: url(./vegan-burger.gif);
 }
@@ -5,18 +15,93 @@ body {
 header {
     text-align: center;
     font-size: 5rem;
-    background-color: rgba(187, 49, 215, 0.8);
-    color: rgb(240, 240, 85);
-    border-radius: 25px;
+    color: white;
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
     font-size: 2rem;
+    color: white;
 }
 
-.nav-btn {
-    background-color: rgba(187, 49, 215, 0.5);
-    color: rgb(240, 240, 85);
+h2 {
+    color: #dd0d0d;
+    font-family: 'Brixton' sans-serif;
+}
+
+#about {
+    color: #484848;
+    font-size: 3.2rem;
+    background-color: #f2ede6;
+    margin: 10rem 25rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "img1 desc1 . img2 desc2 ."
+    "img3 desc3 . img4 desc4 ."
+    "img5 desc5 . img6 desc6 .";
+    justify-items: center;
+    background-color: #f2ede6;
+    margin: 5rem;
+    border-radius: 1rem;
+}
+
+#menu-container > p {
+    font-family: 'Gilroy' sans-serif;
+    color: #7a7a7a;
+}
+
+#classic-burger {
+    grid-area: img1;
+}
+
+#classic-desc {
+    grid-area: desc1;
+}
+
+#jalapeno-burger {
+    grid-area: img2;
+}
+
+#jalapeno-desc {
+    grid-area: desc2;
+}
+
+#guac-burger {
+    grid-area: img3;
+}
+
+#guac-desc {
+    grid-area: desc3;
+}
+
+#poboy-burger {
+    grid-area: img4;
+}
+
+#poboy-desc {
+    grid-area: desc4;
+}
+
+#super-shrimp-burger {
+    grid-area: img5;
+}
+
+#super-shrimp-desc {
+    grid-area: desc5;
+}
+
+#buffalo-chikn-burger {
+    grid-area: img6;
+}
+
+#buffalo-chikn-desc {
+    grid-area: desc6;
 }
